@@ -1,4 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .webstudio {
+    margin-top: 15px;
     padding-right: 100px;
     padding-left: 200px;
 }
@@ -48,12 +54,14 @@ h1 {
     font-family:  sans-serif;
 }
 .title {
-    color: white;;
+    color: white;
     text-transform: uppercase;
     
 }
 button {
-  margin: -100px;
+  position: relative;
+  margin: 100px;
+  bottom: 100px;
   background-color: rgb(32, 99, 207);
   border-radius: 10px;
   padding: 20px;
@@ -118,7 +126,6 @@ nav {
 .foter {
     background-color: rgb(40, 45, 49);
     padding: 100px;
-    border-radius: 50px;
 }
 .foterweb {
     margin-left: 149px;
@@ -148,8 +155,7 @@ nav {
 }
 .team-pages {
     background-color:#F5F4FA;
-    border-radius: 50px;
-    width: 1890px;
+    width: 1903px;
 }
 .team-h1 {
     display: flex;
