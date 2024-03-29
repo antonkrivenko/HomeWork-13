@@ -10,17 +10,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&family=Open+Sans&family=Roboto:wght@400;700&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-modal-window.css">
 </head>
 <body>
     <header>
             <h2 class="webstudio"><span class="web">Web</span>Studio</h2>
          <nav>
-            <a href=""class="studio"><b>Студія</b></a>
+            <a href=""class="studio">Студія</a>
             <a href=""class="portfolio">Портфоліо</a>
             <a href=""class="contact">Контакти</a>
          </nav>
-          <img src="svg-image\envelope (hover).svg" alt="">
-          <a href=""class="mail">info@devstudio.com</a><br>
+            <img src="envelope (hover).svg" alt="" class="link_icon">
+       
+          <a href="" class="mail">info@devstudio.com</a>
+          <br>
           <img src="svg-image\smartphone.svg" alt="">
           <a href="tel:+380961111111"class="number">+38 096 111 11 11</a>
     </header>
@@ -28,29 +31,54 @@
         <section class="underhead">
         <div class="container">
             <h1 class="title">Ефективні рішення для<br> вашого бізнесу</h1>
-            <button class="Order-service">Замовити послугу</button>
+            <button class="Order-service" data-modal-open>Замовити послугу</button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <h1 class="dani">Залиште свої дані, ми вам передзвонимо</h1>
+                <form action="" class="form">
+                <label for="" class="name">Ім'я  
+                <svg>
+                <use></use>
+                </svg>
+                <input type="text" class="input-name">
+                </label>
+                <label for="" class="telefon">Телефон <br>
+                <input type="tel" class="input-telefon">
+                </label>
+                <label for="" class="post">Пошта <br>
+                <input type="email" class="input-post">
+                </label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <p class="coment"></p>
+                <input type="checkbox" class="checkbox">
+                <p>Погоджуюся з розсилкою та приймаю <a href="" class="link">Умови договору</a></p>
+                <button type="submit">Відправити</button>
+                </form>
+                    <button class="button" data-modal-close>Закрити</button>
+                </div>
+            </div>
         </div>
         </section>
         
         <div class="content-container">
             <section class="section">
                 <img src="svg-image\Group 4.svg" alt="" class="icon"> 
-                <h3>Сучасні технології</h3>
+                <h3 class="h3-icon">Сучасні технології</h3>
                 <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань,  </p>
             </section>
             <section class="section">
                 <img src="svg-image\Group 3.svg" alt="" class="icon">
-                <h3>Планування</h3>
+                <h3 class="h3-icon">Планування</h3>
                 <p>Так само консультація з широким активом значною мірою зумовлює.</p>
             </section>
             <section class="section">
                 <img src="svg-image\Group 2.svg" alt="" class="icon">
-                <h3>Пунктуальність</h3>
+                <h3 class="h3-icon">Пунктуальність</h3>
             <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
             </section>
             <section class="section">
                 <img src="svg-image\Group 1.svg" alt="" class="icon">
-                <h3>Увага до деталей</h3>
+                <h3 class="h3-icon">Увага до деталей</h3>
                 <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
             </section>
         </div>
@@ -62,30 +90,58 @@
                <img src="Постійні клієнти\img (2) (5).jpg" alt="work" class="client">
             </section>
         </div>
-            <section>
-            <div class="team-pages">
+            <section class="our-team">
                 <div class="team-h1"><h1 class="heading">Наша команда</h1></div>
+            <div class="team-pages">
             <div class="team-img">
             <article>
                  <img src="Постійні клієнти\img (1) (2).jpg" alt="" class="img">
-                 <h2 class="name1">Ігор Дем'яненко</h2>
+                 <div class="all-team"><div class="name1">Ігор</div> <div  class="name1 name2">Дем'яненко</div></div>
+                <div class="prof"><div class="prof1">Product</div> <div  class="prof1 prof2">Designer</div></div>
+                <div class="img-div">
+                <img src="svg-image\instagram 2.svg" alt="" width="30" class="img1">
+                <img src="svg-image\twitter 1.svg" alt="" width="30" class="img2">
+                <img src="svg-image\facebook 1.svg" alt="" width="30" class="img2">
+                <img src="svg-image\linkedin 1.svg" alt="" width="30"class="img2">
+            </div>
             </article>
              <article>
                  <img src="Постійні клієнти\img (2) (3).jpg" alt="" class="img">
-                 <h2 class="name1">Ольга Рєпіна</h2>
-            </article>
+                 <div class="all-team"><div class="name1">Ольга </div> <div class="name1 name2">Рєпіна</div></div>
+                 <div class="prof"><div class="prof1">Frontend</div> <div  class="prof1 prof2">Developer</div></div>
+                 <div class="img-div">
+                    <img src="svg-image\instagram 2.svg" alt="" width="30" class="img1">
+                    <img src="svg-image\twitter 1.svg" alt="" width="30" class="img2">
+                    <img src="svg-image\facebook 1.svg" alt="" width="30" class="img2">
+                    <img src="svg-image\linkedin 1.svg" alt="" width="30"class="img2">
+                </div>
+                </article>
             <article>
                  <img src="Постійні клієнти\img (3) (1).jpg" alt="" class="img">
-                 <h2 class="name1">Микола Тарасов</h2>
-            </article>
+                 <div class="all-team"><div class="name1">Микола </div> <div class="name1 name2">Тарасов</div></div>
+                 <div class="prof prof-mar"><div class="prof1">Marketing</div></div>
+                 <div class="img-div2">
+                    <img src="svg-image\instagram 2.svg" alt="" width="30" class="img1">
+                    <img src="svg-image\twitter 1.svg" alt="" width="30" class="img2">
+                    <img src="svg-image\facebook 1.svg" alt="" width="30" class="img2">
+                    <img src="svg-image\linkedin 1.svg" alt="" width="30" class="img2">
+                </div>
+                </article>
              <article>
                  <img src="Постійні клієнти\img (4) (1).jpg" alt="" class="img">     
-                 <h2 class="name1">Михайло Єрмаков</h2>
-            </article>
+                 <div class="all-team"><div class="name1">Михайло </div> <div class="name1 name2">Єрмаков</div></div>
+                 <div class="prof"><div class="prof1">UI</div> <div  class="prof1 prof2">Designer</div></div>
+                 <div class="img-div2">
+                    <img src="svg-image\instagram 2.svg" alt="" width="30" class="img1">
+                    <img src="svg-image\twitter 1.svg" alt="" width="30" class="img2">
+                    <img src="svg-image\facebook 1.svg" alt="" width="30" class="img2">
+                    <img src="svg-image\linkedin 1.svg" alt="" width="30" class="img2">
+                </div>
+                </article>
             </div>
             </div>
             </section>
-            <section>
+            <div class="regular-customers">
                 <div class="team-h1"><h1 class="heading">Постійні клієнти</h1></div>
             <div class="regular-client">
                 <img src="svg-image\group (1).svg" alt="" class="img-regular-client">
@@ -95,7 +151,7 @@
                 <img src="svg-image\group (4).svg" alt="" class="img-regular-client">
                 <img src="svg-image\group (5).svg" alt="" class="img-regular-client">
             </div>
-            </section>
+            </div>
      </main>
      <footer>
         <div class="foter">
@@ -114,5 +170,6 @@
     </div>
     </div>
      </footer>
+     <script src="script.js"></script>
 </body>
 </html>
