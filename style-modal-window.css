@@ -24,7 +24,6 @@
     top: 50%;
     left: 50%;
     width: 700px;
-    height: 700px;
     background-color: white;
     transform: translate(-50%, -50%);
     padding: 20px;
@@ -38,7 +37,6 @@
     color: #58B0F6;
 }
 .dani {
-    text-align: center;
     font-size: 20px;
     color: #212121;
     font-family: sans-serif;
@@ -70,4 +68,44 @@
 .coment {
     font-family: sans-serif;
     color: #757575;
+}
+.form-modal-input, .form-modal-textarea {
+    width: 100%;
+}
+.form-modal-textarea {
+    height: 128px;
+    padding: 12px 16px;
+    margin-top: 4px;
+}
+.modal.text {
+    margin-bottom: 12px;
+}
+.form-modal-label {
+    margin-bottom: 10px;
+    display: block;
+}
+.form-modal-input {
+    height: 48px;
+    margin-top: 4px;
+}
+.privacy-box {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+.modal-btn {
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: #2196F3;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: 'Roboto';
+    line-height: 30px;
 }

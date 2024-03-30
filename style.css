@@ -78,8 +78,15 @@ p {
     height: 450px;
     padding-top: 200px ;
 }
-.container {
+.title-div {
     text-align: center;
+    position: relative;
+    right: 38%;
+}
+.container {
+    position: relative;
+    left: 38%;
+    bottom: 50px;
 }
 h1 {
     padding: 10px;
@@ -300,5 +307,3 @@ article {
     justify-content: center;
     margin-bottom: 60px;
 }
-
-  
