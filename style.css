@@ -29,6 +29,19 @@
 }
 .filter-list-btn {
     padding: 6px 22px;
+    border-radius: 4px;
+    transition: 0.1s;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #212121;    
+}
+.filter-list-btn:hover {
+    background-color: #2196F3;
+    color: #FFFFFF;
 }
 .portfolio-list {
     display: flex;
@@ -59,10 +72,14 @@
     letter-spacing: 0.02em;
     text-align: left;    
     color: #212121;
+    transition: 0.2s;
+    padding-bottom: 28px;
     
 }
 .nav-list-link:hover {
+    border-bottom: 4px solid #2196F3;
     color: #2196F3;
+    border-radius: 2px;
 }
 .contact-list-link {
     font-family: Roboto;
@@ -147,6 +164,11 @@
 }
 .team {
     padding:94px 0;
+    background-color: #F5F4FA;
+}
+.team-list-item {
+    background-color: #FFFFFF;
+    border-radius: 4px;
 }
 .team-title {
     text-align: center;
@@ -161,7 +183,24 @@
     text-align: center;
 }
 .team-list-text {
+    margin-bottom: 30px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.75px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #757575;
+}
+.team-list-title {
+    margin-top: 30px;
     margin-bottom: 10px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+    letter-spacing: 0.03em;
+    text-align: center;    
 }
 
 .footer {
@@ -182,7 +221,7 @@
     letter-spacing: 0.03em;
     text-align: left; 
     color:rgba(255, 255, 255, 0.6);
-
+    
 }
 .location-link {
     color: #FFFFFF; 
@@ -199,6 +238,24 @@
 .portfolio-list-text-wrap {
     padding: 20px 24px;
 }
+.portfolio-list-title {
+    margin-bottom: 4px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-align: left;    
+}
+.portfolio-list-text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color:#757575;    
+}
 .button {
     width: 216px;
     height: 50px;
@@ -206,7 +263,7 @@
     color: white;
     border: 1px solid cornflowerblue;
     cursor: pointer;
-    }
+}
 .backdrop {
     position: fixed;
     top: 0;
@@ -309,4 +366,38 @@
     margin-top: 30px;
     font-family: 'Roboto';
     line-height: 30px;
+}
+
+.overlay {
+    position: relative;
+    overflow: hidden;
+}
+.overlay-text {
+    position: absolute;
+    padding: 63px 24px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    background-color: #2196F3;   
+    color: #FFFFFF; 
+    bottom: 0;
+    height: 100%;
+    transform: translateY(100%);
+    transition: 1s;
+    opacity: 0.9;
+    
+}
+.portfolio-list-item {
+    max-width: 370px;
+    border: solid 1px #EEEEEE;
+}
+
+.portfolio-list-link:hover .overlay-text {
+    transform: translateY(0);
+}
+.portfolio-list-text-wrap {
+    color: black;
 }
