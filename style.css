@@ -96,7 +96,7 @@
 /* hero section */
 .hero {
     padding: 200px 0;
-    background-color: #2F303A;
+    background-image: url(./img-webstudio/Img.png);
 }
 .hero-title {
     font-family: Roboto;
@@ -132,6 +132,11 @@
     display: flex;
     gap: 30px;
 }
+.features-list-img{
+    background-color: #F5F4FA;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}
 .features-list-title {
     font-family: Roboto;
     font-size: 14px;
@@ -161,6 +166,12 @@
 .work-title {
     text-align: center;
     margin-bottom: 50px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    letter-spacing: 0.03em;
+    text-align: center;    
 }
 .team {
     padding:94px 0;
@@ -173,6 +184,12 @@
 .team-title {
     text-align: center;
     margin-bottom: 50px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    letter-spacing: 0.03em;
+    text-align: center;
 }
 .team-list {
     display: flex;
